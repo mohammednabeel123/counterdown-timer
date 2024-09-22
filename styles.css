@@ -1,0 +1,128 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Countdown Timer Container */
+.countdown-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input groups to align labels and inputs */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c757d;
+  margin-right: 10px;
+}
+
+.input-group input {
+  width: 80px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f8f9fa;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  outline: none;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  width: 120px;
+  padding: 12px;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #003f7f 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+#reset-btn {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+#reset-btn:hover {
+  background: linear-gradient(135deg, #c82333 0%, #b01e29 100%);
+}
+
+/* Time Display Styling */
+#time-display {
+  margin-top: 30px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #343a40;
+}
+
+/* Small screen responsiveness */
+@media (max-width: 500px) {
+  .countdown-container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+#start-btn:active {
+  background: linear-gradient(135deg, #e0b117 0%, rgb(182, 41, 6));
+}
+#stop-btn:active {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333);
+}
